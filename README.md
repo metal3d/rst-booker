@@ -18,7 +18,7 @@ That's all :)
 You can try to compile documentation ps file or pdf file using this commands from your working directory:
 
     make
-    or if you want pds
+    or if you want pdf file
     make pdf
 
 Cleanup your build directory and output files with:

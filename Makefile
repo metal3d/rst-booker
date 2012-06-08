@@ -1,5 +1,4 @@
 
-
 all: prepare pdf
 
 prepare:
@@ -15,10 +14,9 @@ ps: dvi
 	cd build && dvips index.dvi
 	mv build/index.ps book.ps
 
-pdf: ps
-	cp book.ps book-tmp.ps
-	ps2pdf book-tmp.ps book.pdf
-	rm -f book-tmp.ps
+pdf: dvi
+	cd build && dvipdf index.dvi
+	mv build/index.pdf book.pdf
 
 
 clean:

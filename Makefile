@@ -14,8 +14,10 @@ ps: dvi
 	cd build && dvips index.dvi
 	mv build/index.ps book.ps
 
-pdf: dvi
-	cd build && dvipdf index.dvi
+#should be compile twice for toc and bibl sections
+pdf: prepare
+	cd build && pdflatex index.tex
+	cd build && pdflatex index.tex
 	mv build/index.pdf book.pdf
 
 

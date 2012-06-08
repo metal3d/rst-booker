@@ -19,8 +19,10 @@ A book.pdf file will be generated. You can have a postscript version using this 
     
     make ps
 
+There is some options that can be passed to the "make" command. Check `Some make options`_ section to know wich options can be used.
+
 How to use code block
----------------------
+'''''''''''''''''''''
 
 Because ".. code-blocks::" directive is not usable with bundled rst2pdf version I include, you just need to use ".. code::" directive. You can put code inside that directive. Remember that this directive cannot (for now) include file. You have to put code inside you document.
 

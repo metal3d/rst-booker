@@ -11,9 +11,12 @@ RST-Booker - make a nice book from rst file via LaTeX
 =====================================================
 
 :author: Patrice FERLET
+:subject: ReStructuredTex to make a book - viva LaTeX
 
 .. contents::
 
 .. include:: example.rst
+
+.. include:: command.rst
 
 
